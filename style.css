@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rock Salt', cursive;
+    background: #f0f2f5;
+    color: #333;
+}
+
+.navbar {
+    background-color: #ffcc00; /* Amarillo para la juguetería */
+    padding: 10px 40px; /* Mayor espacio en los lados */
+    display: flex;
+    justify-content: space-between; /* Logo a la izquierda*/
+    align-items: center;
+    
+    margin: 0 auto;
+    border-bottom: 2px solid #ff3300;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo img {
+    height: 80px; 
+    margin-right: 20px;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; 
+}
+
+
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    color: #fff;
+    background-color: #ff3300; 
+    transform: translateY(-3px); /* Efecto subir */
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffcc00;
+    min-width: 160px;
+    z-index: 1;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px 0;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 0.85rem; 
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #ff3300;
+    color: white;
+}
+
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons .btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff3300;
+    font-weight: bold;
+    font-size: 0.85rem; 
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.auth-buttons .btn:hover {
+    background-color: #ff6600; /* Rojo más claro */
+    transform: scale(1.05);
+}
+
+.auth-buttons .btn:active {
+    transform: scale(0.98); /* Efecto de presionar */
+}
